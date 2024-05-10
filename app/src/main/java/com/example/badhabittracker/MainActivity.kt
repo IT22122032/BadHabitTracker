@@ -28,7 +28,7 @@ class MainActivity : AppCompatActivity() {
         val addbtn = findViewById<Button>(R.id.addButton) // Moved this line here
 
        addbtn.setOnClickListener {
-            val intent = Intent(this, MainActivity::class.java)
+            val intent = Intent(this, AddBadHabits::class.java)
             startActivity(intent)
         }
     }
