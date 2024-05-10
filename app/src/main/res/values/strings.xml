@@ -13,4 +13,6 @@
         <string name="badHabit">What is your Bad Habit?\n</string>
         <string name="start">Start</string>
         <string name="title">My Bad Habits</string>
+    <string name="Update">Update</string>
+        <string name="Delete">Delete</string>
 </resources>
