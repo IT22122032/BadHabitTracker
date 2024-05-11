@@ -8,6 +8,7 @@
     <color name="background">#D6EDFF</color>
     <color name="textcolor2">#3C4681</color>
     <color name="textcolor3">#0B123C</color>
-    <color name="deete">#F0766D</color>
-    <color name="update">#91DF61</color>
+    <color name="backgroundPurple">#DDD6FB</color>
+    <color name="btnColor3">#A2AEED</color>
+    <color name="btn4">#323F85</color>
 </resources>

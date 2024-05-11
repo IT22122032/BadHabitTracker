@@ -37,7 +37,7 @@ class MainActivity : AppCompatActivity() {
 
         val recyclerView:RecyclerView=findViewById(R.id.habittesRecycleView)
         // Create an instance of your adapter
-        adapter = DeytailAdapter(this)
+        adapter = DeytailAdapter(this, lifecycleScope, repository)
 
         // Set up the RecyclerView with the adapter
         recyclerView.layoutManager= LinearLayoutManager(this)

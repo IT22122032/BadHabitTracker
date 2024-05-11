@@ -1,5 +1,6 @@
 package com.example.badhabittracker
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
@@ -47,6 +48,10 @@ class AddBadHabits : AppCompatActivity() {
             // Insert the BadHabit object into the database
             lifecycleScope.launch(Dispatchers.IO) {
                 repository.insert(badHabit)
+
+                // Navigate back to MainActivity
+                startActivity(Intent(this@AddBadHabits, MainActivity::class.java))
+                finish() // Close the current activity
             }
         }
     }

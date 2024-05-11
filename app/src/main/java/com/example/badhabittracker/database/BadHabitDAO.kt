@@ -4,6 +4,7 @@ import androidx.room.Dao
 import androidx.room.Delete
 import androidx.room.Insert
 import androidx.room.Query
+import androidx.room.Update
 
 @Dao
 interface BadHabitDAO {
@@ -14,4 +15,10 @@ interface BadHabitDAO {
 
     @Query("SELECT * FROM BadHabit")
     fun getAllTodoItems():List<BadHabit>
+
+    @Query("DELETE FROM BadHabit")
+    suspend fun deleteAll()
+
+    @Update
+    suspend fun updateBadHabit(badHabit: BadHabit)
 }

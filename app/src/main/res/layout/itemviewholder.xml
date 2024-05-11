@@ -3,61 +3,95 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    android:background="@color/backgroundPurple">
+
+    <TextView
+        android:id="@+id/BadHabitLable"
+        android:layout_width="148dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/BadHabitLable"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/viewHodertextView1"
         android:layout_width="297dp"
         android:layout_height="58dp"
-        android:layout_marginTop="10dp"
+        android:fontFamily="sans-serif-black"
         android:text="TextView"
-        app:layout_constraintBottom_toTopOf="@+id/ViewHoldertextView2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.412" />
+        app:layout_constraintTop_toBottomOf="@+id/BadHabitLable" />
+
+    <TextView
+        android:id="@+id/TimePeriodLable"
+        android:layout_width="176dp"
+        android:layout_height="32dp"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/TimePeriodLable"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewHodertextView1" />
 
     <TextView
         android:id="@+id/ViewHoldertextView2"
         android:layout_width="297dp"
         android:layout_height="58dp"
+        android:fontFamily="sans-serif-black"
         android:text="TextView"
-        app:layout_constraintBottom_toTopOf="@+id/viewHolderText3"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/viewHodertextView1" />
+        app:layout_constraintTop_toBottomOf="@+id/TimePeriodLable" />
+
+    <TextView
+        android:id="@+id/DistributionLable"
+        android:layout_width="176dp"
+        android:layout_height="36dp"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/DistriButionLable"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ViewHoldertextView2" />
 
     <TextView
         android:id="@+id/viewHolderText3"
         android:layout_width="297dp"
         android:layout_height="58dp"
+        android:fontFamily="sans-serif-black"
         android:text="TextView"
-        app:layout_constraintBottom_toTopOf="@+id/viewHoldertext4"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ViewHoldertextView2" />
+        app:layout_constraintTop_toBottomOf="@+id/DistributionLable" />
+
+    <TextView
+        android:id="@+id/TimeTocureLable"
+        android:layout_width="240dp"
+        android:layout_height="28dp"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/TimeToCureLable"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewHolderText3" />
 
     <TextView
         android:id="@+id/viewHoldertext4"
         android:layout_width="297dp"
         android:layout_height="58dp"
-        android:layout_marginEnd="24dp"
+        android:fontFamily="sans-serif-black"
         android:text="TextView"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.633"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/viewHolderText3" />
+        app:layout_constraintTop_toBottomOf="@+id/TimeTocureLable" />
 
     <Button
         android:id="@+id/update"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="56dp"
-        android:layout_marginTop="24dp"
-        android:backgroundTint="@color/update"
+        android:layout_marginStart="108dp"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="@color/btnColor3"
         android:text="@string/Update"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/viewHoldertext4" />
@@ -66,13 +100,11 @@
         android:id="@+id/delete"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="68dp"
-        android:backgroundTint="@color/deete"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="80dp"
+        android:backgroundTint="@color/btnColor3"
         android:text="@string/Delete"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.923"
-        app:layout_constraintStart_toEndOf="@+id/update"
         app:layout_constraintTop_toBottomOf="@+id/viewHoldertext4" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

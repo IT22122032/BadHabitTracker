@@ -7,10 +7,15 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 import com.example.badhabittracker.database.BadHabit
+import com.example.badhabittracker.database.BadHabitRepository
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.launch
+import kotlinx.coroutines.withContext
 
 
 class DeytailAdapter // Set a single sample value
-    (private var context: Context) : RecyclerView.Adapter<DeytailViewHolder>() {
+    (private var context: Context,private val lifecycleScope: CoroutineScope, private val repository: BadHabitRepository) : RecyclerView.Adapter<DeytailViewHolder>() {
     private var habits = emptyList<BadHabit>()
 
     fun setData(newData: List<BadHabit>) {
@@ -37,7 +42,17 @@ class DeytailAdapter // Set a single sample value
             Toast.makeText(context,"update button clicked",Toast.LENGTH_LONG).show()
         }
         holder.delete.setOnClickListener {
-            Toast.makeText(context,"Your Bad habit has Gone now",Toast.LENGTH_LONG).show()// Handle delete button click
+            // Call the delete function from the repository
+            lifecycleScope.launch(Dispatchers.IO) {
+                repository.delete(habit)
+                // Remove the deleted item from the list
+                habits = habits.filter { it != habit }
+                // Notify adapter of the data change
+                withContext(Dispatchers.Main) {
+                    notifyDataSetChanged()
+                }
+            }
+            Toast.makeText(context, "Your bad habit has been deleted", Toast.LENGTH_LONG).show()
         }
     }
 

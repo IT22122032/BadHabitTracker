@@ -15,4 +15,8 @@
         <string name="title">My Bad Habits</string>
     <string name="Update">Update</string>
         <string name="Delete">Delete</string>
+        <string name="BadHabitLable">Bad Habit :</string>
+        <string name="TimePeriodLable">You have it Since,</string>
+    <string name="DistriButionLable">It has ditributed about,</string>
+    <string name="TimeToCureLable">To get rid from it you will take about</string>
 </resources>
