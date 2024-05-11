@@ -70,15 +70,20 @@ class UpdateHabits : AppCompatActivity() {
     }
 
     private fun updateBadHabit(badHabit: BadHabit) {
+        val activityContext = this@UpdateHabits // Capture the activity context
         // Call the update method in the repository
         CoroutineScope(Dispatchers.IO).launch {
             badHabitRepository.update(badHabit)
             // Finish the activity and pass a flag indicating that an update has occurred
-            val intent = Intent().apply {
+            val intent = Intent(activityContext, StartPage::class.java).apply {
                 putExtra("updateOccurred", true)
             }
-            setResult(Activity.RESULT_OK, intent)
+            //setResult(Activity.RESULT_OK, intent)
+            activityContext.startActivity(intent)
+            // Finish the current activity
+            activityContext.finish()
             finish()
+
         } // Close the activity after updating
     }
 }
