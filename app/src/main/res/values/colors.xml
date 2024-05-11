@@ -11,4 +11,6 @@
     <color name="backgroundPurple">#DDD6FB</color>
     <color name="btnColor3">#A2AEED</color>
     <color name="btn4">#323F85</color>
+    <color name="redbtn">#F16C62</color>
+    <color name="yellow">#ffffbb33</color>
 </resources>

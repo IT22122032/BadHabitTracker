@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundPurple"
+    tools:context=".UpdateHabits">
+
+    <TextView
+        android:id="@+id/UpdateHeading"
+        android:layout_width="225dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="85dp"
+        android:layout_marginTop="43dp"
+        android:layout_marginBottom="45dp"
+        android:text="@string/UpdateHeading"
+        android:textColor="@color/textcolor2"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/UpdateDistributionLable"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.079"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/UpdateDistributionLable"
+        android:layout_width="400dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="7dp"
+        android:layout_marginBottom="26dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="@string/Distribution"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/UpadateDistribution"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/UpdateHeading" />
+
+    <EditText
+        android:id="@+id/UpadateDistribution"
+        android:layout_width="348dp"
+        android:layout_height="56dp"
+        android:layout_marginEnd="58dp"
+        android:layout_marginBottom="17dp"
+        android:ems="10"
+        android:hint="@string/updateDistribution"
+        android:inputType="text"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/updateTimeTogetridLable"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/UpdateDistributionLable" />
+
+    <TextView
+        android:id="@+id/updateTimeTogetridLable"
+        android:layout_width="400dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginBottom="17dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="@string/RecoverTime"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/updatetimeTogetRid"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/UpadateDistribution" />
+
+    <EditText
+        android:id="@+id/updatetimeTogetRid"
+        android:layout_width="348dp"
+        android:layout_height="56dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginBottom="58dp"
+        android:ems="10"
+        android:hint="@string/UpdateTimeTgetRid"
+        android:inputType="text"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/updateDta"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/updateTimeTogetridLable" />
+
+    <Button
+        android:id="@+id/updateDta"
+        android:layout_width="112dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="29dp"
+        android:layout_marginBottom="128dp"
+        android:backgroundTint="@color/btnBlue"
+        android:text="@string/Update"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/updatetimeTogetRid" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,6 +1,7 @@
 package com.example.badhabittracker
 
 import android.content.Context
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -39,7 +40,16 @@ class DeytailAdapter // Set a single sample value
 
         // Setting click listeners or other operations if needed
         holder.update.setOnClickListener {
-            Toast.makeText(context,"update button clicked",Toast.LENGTH_LONG).show()
+            // Start the UpdateHabitsActivity when the update button is clicked
+            holder.update.setOnClickListener {
+                val intent = Intent(context, UpdateHabits::class.java)
+                intent.putExtra("id", habit.id)
+                intent.putExtra("badHabit", habit.badHabit)
+                intent.putExtra("timePeriod", habit.timePeriod)
+                intent.putExtra("distribution", habit.distribution)
+                intent.putExtra("recoverTime", habit.recoverTime)
+                context.startActivity(intent)
+            }
         }
         holder.delete.setOnClickListener {
             // Call the delete function from the repository

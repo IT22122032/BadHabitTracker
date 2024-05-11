@@ -71,13 +71,38 @@
         android:id="@+id/add_btn"
         android:layout_width="154dp"
         android:layout_height="53dp"
-        android:layout_marginTop="112dp"
+        android:layout_marginTop="44dp"
         android:backgroundTint="@color/btnBlue"
         android:text="Add"
         android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/backbtn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/TimeTorecover" />
+        app:layout_constraintTop_toBottomOf="@+id/TimeTorecover"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="27dp"
+        android:layout_marginTop="18dp"
+        android:text="@string/addhabit"
+        android:textAlignment="center"
+        android:textColor="@color/btn4"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="115dp" />
+
+    <Button
+        android:id="@+id/backbtn"
+        android:layout_width="105dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="5dp"
+        android:backgroundTint="@color/btn4"
+        android:text="@string/Backbtn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

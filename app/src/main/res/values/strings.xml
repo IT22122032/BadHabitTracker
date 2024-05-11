@@ -1,22 +1,27 @@
 <resources>
-        <string name="app_name">BadHabitTracker</string>
-        <string name="Add">Add New one</string>
-        <string name="View">View</string>
-        <string name="Title">Bad Habit Tracker</string>
-        <string name="description1">Decrease Your Bad habits one by one</string>
-        <string name="description2">Be a Person full With Good Habits</string>
-        <!-- TODO: Remove or change this placeholder text -->
-        <string name="hello_blank_fragment">Hello blank fragment</string>
-        <string name="TimePeriod">How long is it with you?\n</string>
-        <string name="Distribution">How much is it ditributed Withing you(%)?</string>
-        <string name="RecoverTime">How long will it take to get rid from it?</string>
-        <string name="badHabit">What is your Bad Habit?\n</string>
-        <string name="start">Start</string>
-        <string name="title">My Bad Habits</string>
+    <string name="app_name">BadHabitTracker</string>
+    <string name="Add">Add New one</string>
+    <string name="View">View</string>
+    <string name="Title">Bad Habit Tracker</string>
+    <string name="description1">Decrease Your Bad habits one by one</string>
+    <string name="description2">Be a Person full With Good Habits</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="TimePeriod">How long is it with you?\n</string>
+    <string name="Distribution">How much is it ditributed Withing you(%)?</string>
+    <string name="RecoverTime">How long will it take to get rid from it?</string>
+    <string name="badHabit">What is your Bad Habit?\n</string>
+    <string name="start">Start</string>
+    <string name="title">My Bad Habits</string>
     <string name="Update">Update</string>
-        <string name="Delete">Delete</string>
-        <string name="BadHabitLable">Bad Habit :</string>
-        <string name="TimePeriodLable">You have it Since,</string>
+    <string name="Delete">Delete</string>
+    <string name="BadHabitLable">Bad Habit :</string>
+    <string name="TimePeriodLable">You have it Since,</string>
     <string name="DistriButionLable">It has ditributed about,</string>
     <string name="TimeToCureLable">To get rid from it you will take about</string>
+    <string name="UpdateHeading">Update Your Details</string>
+    <string name="updateDistribution">Distribution as a percentage</string>
+    <string name="UpdateTimeTgetRid">Time Period To get rid from it</string>
+    <string name="addhabit">Add Your Habit</string>
+    <string name="Backbtn">Back</string>
 </resources>

@@ -36,6 +36,7 @@ class AddBadHabits : AppCompatActivity() {
         var textView3: TextView = findViewById(R.id.distribution)
         var textView4: TextView = findViewById(R.id.TimeTorecover)
         var addbtn: Button = findViewById(R.id.add_btn)
+        val backbtn = findViewById<Button>(R.id.backbtn) // Moved this line here
 
         addbtn.setOnClickListener {
             val badHabit = BadHabit(
@@ -53,6 +54,12 @@ class AddBadHabits : AppCompatActivity() {
                 startActivity(Intent(this@AddBadHabits, MainActivity::class.java))
                 finish() // Close the current activity
             }
+        }
+
+
+        backbtn.setOnClickListener {
+            val intent = Intent(this, MainActivity::class.java)
+            startActivity(intent)
         }
     }
 }
