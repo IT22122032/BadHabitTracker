@@ -24,4 +24,5 @@
     <string name="UpdateTimeTgetRid">Time Period To get rid from it</string>
     <string name="addhabit">Add Your Habit</string>
     <string name="Backbtn">Back</string>
+    <string name="serch">Search By Habit Name</string>
 </resources>

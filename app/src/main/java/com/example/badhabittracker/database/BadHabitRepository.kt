@@ -9,4 +9,8 @@ class BadHabitRepository (
         fun getAllTodoItems():List<BadHabit> = db.getBadHabit().getAllTodoItems()
 
         suspend fun update(badHabit: BadHabit) = db.getBadHabit().updateBadHabit(badHabit)
+
+    suspend fun searchHabits(query: String): List<BadHabit> {
+        return db.getBadHabit().searchHabits(query)
+    }
     }

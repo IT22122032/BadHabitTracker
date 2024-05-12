@@ -21,4 +21,7 @@ interface BadHabitDAO {
 
     @Update
     suspend fun updateBadHabit(badHabit: BadHabit)
+
+    @Query("SELECT * FROM BadHabit WHERE badHabit LIKE '%' || :query || '%'")
+    suspend fun searchHabits(query: String): List<BadHabit>
 }

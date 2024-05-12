@@ -22,29 +22,45 @@
         app:layout_constraintTop_toBottomOf="@+id/habittesRecycleView"
         app:layout_constraintVertical_bias="1.0" />
 
+    <!-- Search EditText -->
+
     <TextView
         android:id="@+id/titleMybadHabit"
         android:layout_width="match_parent"
         android:layout_height="47dp"
-        android:layout_marginBottom="4dp"
+        android:layout_marginTop="4dp"
         android:text="@string/title"
         android:textAlignment="center"
         android:textColor="@color/textcolor2"
         android:textSize="34sp"
         android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/searchEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="@string/serch"
+        android:inputType="text"
+        android:maxLines="1"
+        android:textColorHint="@android:color/darker_gray"
+        android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/habittesRecycleView"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleMybadHabit" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/habittesRecycleView"
         android:layout_width="0dp"
         android:layout_height="526dp"
-        android:layout_marginTop="6dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/titleMybadHabit" />
+        app:layout_constraintTop_toBottomOf="@+id/searchEditText" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
